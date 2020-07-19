@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		238B30E724C484B500362249 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238B30E624C484B500362249 /* Keys.swift */; };
 		75E1C11A243C804700461FC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1C119243C804700461FC3 /* AppDelegate.swift */; };
 		75E1C11C243C804700461FC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1C11B243C804700461FC3 /* SceneDelegate.swift */; };
 		75E1C11E243C804700461FC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1C11D243C804700461FC3 /* ViewController.swift */; };
@@ -14,6 +15,10 @@
 		75E1C123243C804B00461FC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75E1C122243C804B00461FC3 /* Assets.xcassets */; };
 		75E1C126243C804B00461FC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E1C124243C804B00461FC3 /* LaunchScreen.storyboard */; };
 		75E1C131243C804B00461FC3 /* WeaherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1C130243C804B00461FC3 /* WeaherAppTests.swift */; };
+		75E1C13C243C81C200461FC3 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1C13B243C81C200461FC3 /* Weather.swift */; };
+		75E1C13E243C825800461FC3 /* WeatherObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1C13D243C825800461FC3 /* WeatherObservable.swift */; };
+		75E1C140243C828800461FC3 /* WeatherObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1C13F243C828800461FC3 /* WeatherObserver.swift */; };
+		75E1C142243C853000461FC3 /* WeatherProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1C141243C853000461FC3 /* WeatherProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		75E1C116243C804600461FC3 /* WeaherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeaherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		238B30E624C484B500362249 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		75E1C116243C804600461FC3 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E1C119243C804700461FC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75E1C11B243C804700461FC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		75E1C11D243C804700461FC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +44,10 @@
 		75E1C12C243C804B00461FC3 /* WeaherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeaherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E1C130243C804B00461FC3 /* WeaherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaherAppTests.swift; sourceTree = "<group>"; };
 		75E1C132243C804B00461FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75E1C13B243C81C200461FC3 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		75E1C13D243C825800461FC3 /* WeatherObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherObservable.swift; sourceTree = "<group>"; };
+		75E1C13F243C828800461FC3 /* WeatherObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherObserver.swift; sourceTree = "<group>"; };
+		75E1C141243C853000461FC3 /* WeatherProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +80,7 @@
 		75E1C117243C804600461FC3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75E1C116243C804600461FC3 /* WeaherApp.app */,
+				75E1C116243C804600461FC3 /* WeatherApp.app */,
 				75E1C12C243C804B00461FC3 /* WeaherAppTests.xctest */,
 			);
 			name = Products;
@@ -86,6 +96,11 @@
 				75E1C122243C804B00461FC3 /* Assets.xcassets */,
 				75E1C124243C804B00461FC3 /* LaunchScreen.storyboard */,
 				75E1C127243C804B00461FC3 /* Info.plist */,
+				75E1C13B243C81C200461FC3 /* Weather.swift */,
+				75E1C13D243C825800461FC3 /* WeatherObservable.swift */,
+				75E1C13F243C828800461FC3 /* WeatherObserver.swift */,
+				75E1C141243C853000461FC3 /* WeatherProvider.swift */,
+				238B30E624C484B500362249 /* Keys.swift */,
 			);
 			path = WeaherApp;
 			sourceTree = "<group>";
@@ -116,7 +131,7 @@
 			);
 			name = WeaherApp;
 			productName = WeaherApp;
-			productReference = 75E1C116243C804600461FC3 /* WeaherApp.app */;
+			productReference = 75E1C116243C804600461FC3 /* WeatherApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		75E1C12B243C804B00461FC3 /* WeaherAppTests */ = {
@@ -200,7 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E1C140243C828800461FC3 /* WeatherObserver.swift in Sources */,
+				238B30E724C484B500362249 /* Keys.swift in Sources */,
+				75E1C142243C853000461FC3 /* WeatherProvider.swift in Sources */,
+				75E1C13C243C81C200461FC3 /* Weather.swift in Sources */,
 				75E1C11E243C804700461FC3 /* ViewController.swift in Sources */,
+				75E1C13E243C825800461FC3 /* WeatherObservable.swift in Sources */,
 				75E1C11A243C804700461FC3 /* AppDelegate.swift in Sources */,
 				75E1C11C243C804700461FC3 /* SceneDelegate.swift in Sources */,
 			);
@@ -370,7 +390,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = metropolia.nikoholo.WeaherApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WeatherApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,7 +408,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = metropolia.nikoholo.WeaherApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WeatherApp;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
